@@ -1,0 +1,109 @@
+html {
+    scroll-behavior: smooth;
+}
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+ --bg-color: #0d0e15;
+ --terminal-red: #ff2414;
+ --accent-purple: #9d4edd;
+ --text-main: #f8f9fa;
+ --font-stack: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-stack);
+    line-height: 1.6;
+    padding: 20px;
+}
+header {
+    border-bottom: 2px dashed var(--terminal-red);
+    padding: 2rem 0;
+    text-align: center;
+}
+header h1 {
+    color: var(--terminal-red);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+header p {
+    font-style: italic;
+    opacity: 0.8;
+}
+nav {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav a {
+    color: var(--accent-purple);
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: var(--terminal-red);
+    text-decoration: underline;
+}
+aside {
+    justify-content: left;
+    float: left;
+    width: 350px;
+}
+aside ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+aside a{
+    color: var(--accent-purple);
+    text-decoration: none;
+    font-weight: bold;
+}
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    border: 1px solid #222;
+    border-radius: 5px;
+     background: #141622;
+}
+
+b {
+    color: var(--terminal-red);
+}
+        h2 {
+    color: var(--accent-purple);
+    margin-bottom: 1redm;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3rem;
+    text-align: center;
+        }
+        ul {
+    list-style-type: '⚡ ';
+    padding-left: 1.5rem;
+        }
+        li {
+    margin-bottom: 0.8rem;
+        }
+        code {
+    background-color: #2a2d44;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: var(--terminal-red);
+        }
+        a.inline-link {
+    color: var(--terminal-red);
+        }
+        footer {
+            margin-top: 5rem;
+            border-top: 2px dashed var(--terminal-red);
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
